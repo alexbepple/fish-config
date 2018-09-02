@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/grc/functions/gcc.fish
