@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/fzy/functions/fkill.fish
