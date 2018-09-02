@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/bang-bang/functions/bind_bang.fish
