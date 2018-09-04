@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/docker/functions/d.rm.all.containers.fish
