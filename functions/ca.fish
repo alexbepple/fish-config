@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/python/functions/ca.fish
