@@ -2,14 +2,14 @@
 function fish_user_key_bindings
     # accept suggestions more easily, as Control-F is hard to reach
     bind ƒ forward-char
-    ### fzy ###
-    bind \cr 'fzy_select_history (commandline -b)'
-    bind \cf 'fzy_select_directory'
-    ### fzy ###
     ### bang-bang ###
     bind ! bind_bang
     bind '$' bind_dollar
     ### bang-bang ###
+    ### fzy ###
+    bind \cr 'fzy_select_history (commandline -b)'
+    bind \cf 'fzy_select_directory'
+    ### fzy ###
     ### pisces ###
     set -l _pisces_bind_mode default
     switch $fish_key_bindings
