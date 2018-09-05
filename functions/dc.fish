@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/docker/functions/dc.fish
