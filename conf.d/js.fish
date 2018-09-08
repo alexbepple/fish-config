@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/js/conf.d/js.fish
