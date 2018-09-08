@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/git/conf.d/git.fish

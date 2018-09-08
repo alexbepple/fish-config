@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/python/conf.d/conda.fish
