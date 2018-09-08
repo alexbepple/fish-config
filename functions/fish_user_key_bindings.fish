@@ -1,7 +1,5 @@
 
 function fish_user_key_bindings
-    # accept suggestions more easily, as Control-F is hard to reach
-    bind ƒ forward-char
     ### bang-bang ###
     bind ! bind_bang
     bind '$' bind_dollar
@@ -25,4 +23,7 @@ function fish_user_key_bindings
     bind -M $_pisces_bind_mode \177 _pisces_backspace
     bind -M $_pisces_bind_mode \t _pisces_complete
     ### pisces ###
+    ### misc ###
+    bind ƒ forward-char
+    ### misc ###
 end
