@@ -1,5 +1,1 @@
-function mkcd
-    set -l dir $argv
-    mkdir -p $dir
-    and cd $dir
-end
+/Users/ab/.config/fisherman/misc/functions/mkcd.fish

@@ -1,7 +1,1 @@
-function l --description 'alias l=gls --color -U'
-	gls --color -U  $argv;
-end
-
-function L --description 'alias L=less'
-	less  $argv;
-end
+/Users/ab/.config/fisherman/misc/functions/l.fish
