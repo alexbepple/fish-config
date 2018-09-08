@@ -1,7 +1,14 @@
 tasks:
+
   build:
     cmds:
       - fish -c 'for boat in boats/*; echo Fishing $boat …; fisher $boat; end'
       - fish -c 'fisher up'
+
+  rebuild:
+    cmds:
+      - git clean -xd -f
+      - task: build
+      - git checkout .
 
 version: '2'
