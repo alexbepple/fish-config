@@ -1,4 +1,1 @@
-# Defined in - @ line 0
-function ga --description 'alias ga=g add'
-	g add $argv;
-end
+/Users/ab/.config/fisherman/git/functions/ga.fish

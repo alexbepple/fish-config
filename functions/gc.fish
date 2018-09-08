@@ -1,4 +1,1 @@
-# Defined in - @ line 0
-function gc --description 'alias gc=g commit --verbose'
-	g commit --verbose $argv;
-end
+/Users/ab/.config/fisherman/git/functions/gc.fish
