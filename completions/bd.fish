@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/bd/completions/bd.fish
