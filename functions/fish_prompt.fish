@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/vibrant/functions/fish_prompt.fish

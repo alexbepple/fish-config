@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/bang-bang/functions/bind_dollar.fish

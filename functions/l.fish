@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/misc/functions/l.fish

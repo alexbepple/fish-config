@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/git/functions/gs.fish

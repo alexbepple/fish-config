@@ -1,1 +1,0 @@
-/Users/ab/.config/fisherman/bd/functions/bd.fish
