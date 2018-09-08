@@ -1,0 +1,1 @@
+/Users/ab/.config/fisherman/navigate/conf.d/navigate.fish
