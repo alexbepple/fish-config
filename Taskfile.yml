@@ -11,4 +11,5 @@ tasks:
       - task: build
       - git checkout .
 
+output: 'prefixed'
 version: '2'
