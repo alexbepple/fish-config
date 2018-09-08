@@ -1,5 +1,8 @@
 
 function fish_user_key_bindings
+    ### command-line-editor ###
+    bind ƒ forward-char
+    ### command-line-editor ###
     ### bang-bang ###
     bind ! bind_bang
     bind '$' bind_dollar
@@ -23,7 +26,4 @@ function fish_user_key_bindings
     bind -M $_pisces_bind_mode \177 _pisces_backspace
     bind -M $_pisces_bind_mode \t _pisces_complete
     ### pisces ###
-    ### command-line-editor ###
-    bind ƒ forward-char
-    ### command-line-editor ###
 end
