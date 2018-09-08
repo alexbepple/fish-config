@@ -1,1 +1,1 @@
-set -g fish_user_abbreviations
+/Users/ab/.config/fisherman/misc/conf.d/_.fish
