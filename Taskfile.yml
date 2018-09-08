@@ -1,6 +1,6 @@
 tasks:
   build:
     cmds:
-      - fish -c 'for boat in boats/*; echo Fishing $boat …; fisher $boat; end'
+      - fish -c 'for boat in boats/*; echo Fishing $boat …; fisher $boat; fisher up $boat; end'
 
 version: '2'
