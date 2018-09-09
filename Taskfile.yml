@@ -10,6 +10,10 @@ tasks:
       - git clean -xd -f
       - task: build
       - git checkout .
+  
+  test:
+    cmds:
+      - fish -c 'fishtape **.test.fish'
 
 output: 'prefixed'
 version: '2'
