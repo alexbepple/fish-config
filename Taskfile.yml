@@ -9,7 +9,7 @@ tasks:
     cmds:
       - git clean -xd -f
       - task: build
-      - git checkout .
+      - git checkout fishd.*
   
   test:
     cmds:
