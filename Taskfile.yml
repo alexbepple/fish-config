@@ -2,6 +2,8 @@ tasks:
 
   rebuild:
     cmds:
+      # uninstall and clean should not run in parallel
+      # b/c uninstall dramatically reduces the need for cleaning
       - task: uninstall-all-plugins
       - task: clean
       - task: build
