@@ -1,14 +1,11 @@
-
 ## Usage
 
-* No need to run anything when modifying existing files.
-* `task build` is needed after adding own config files (in `/plugins`).
-* `task rebuild` is needed after removing own config files and after adding/removing dependencies.
+Run `task` to build and rebuild config.
 
 
-## Misc
+## Dependencies
 
-Taskfile.yml is for https://github.com/go-task/task
+[go-task/task](https://github.com/go-task/task)
 
 
 ### Fisherman
@@ -16,12 +13,6 @@ Taskfile.yml is for https://github.com/go-task/task
 Why use [Fisherman](https://fisherman.github.io/) for assembling fish config?
 
 * handles transitive dependencies
-* provides mechanism for assembling
+* provides mechanism for merging, e.g. `fish_user_key_bindings`.
 
 However, `fisher_dependency_count` is pain.
-
-
-## Backlog
-
-* ! avoid meaningless changes to fisher_dependency_count
-    * When exactly do such changes happen?

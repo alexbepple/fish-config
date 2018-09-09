@@ -1,4 +1,6 @@
 tasks:
+  default:
+    deps: [rebuild]
 
   rebuild:
     cmds:
@@ -7,6 +9,7 @@ tasks:
       - task: uninstall-all-plugins
       - task: clean
       - task: build
+      - task: test
 
   build:
     cmds:
