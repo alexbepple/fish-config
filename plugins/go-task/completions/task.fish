@@ -1,4 +1,5 @@
-set -l task_names (cat Taskfile.yml | yq .tasks | jq keys | grep '"' | sed 's/[",]//g' | string trim | string join ' ')
+set -l task_names (cat Taskfile.yml ^ /dev/null | yq .tasks | jq keys | grep '"' | sed 's/[",]//g' | string trim | string join ' ')
+test -z $task_names; and set task_names ''
 complete -c task -a $task_names
 complete -c task --no-files
 
