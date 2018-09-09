@@ -7,10 +7,14 @@ tasks:
 
   rebuild:
     cmds:
-      - git clean -xd -f
+      - task: clean
       - task: build
       - git checkout fishd.*
   
+  clean:
+    cmds:
+      - git clean -xd -f
+
   test:
     cmds:
       - fish -c 'fishtape **.test.fish | tap-colorize'
