@@ -21,7 +21,7 @@ tasks:
 
   clean:
     cmds:
-      - git clean -xd -f
+      - git clean -Xd -f
 
   test:
     cmds:
