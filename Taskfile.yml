@@ -13,7 +13,7 @@ tasks:
   
   test:
     cmds:
-      - fish -c 'fishtape **.test.fish'
+      - fish -c 'fishtape **.test.fish | tap-colorize'
 
 output: 'prefixed'
 version: '2'
