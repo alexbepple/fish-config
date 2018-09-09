@@ -9,7 +9,6 @@ tasks:
     cmds:
       - task: clean
       - task: build
-      - git checkout fishd.*
   
   clean:
     cmds:
