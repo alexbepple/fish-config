@@ -2,7 +2,7 @@
 ## Usage
 
 * No need to run anything when modifying existing files.
-* `task build` is needed after adding own config files (in `/boats`).
+* `task build` is needed after adding own config files (in `/plugins`).
 * `task rebuild` is needed after removing own config files and after adding/removing dependencies.
 
 

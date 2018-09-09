@@ -10,7 +10,7 @@ tasks:
 
   build:
     cmds:
-      - fish -c 'fisher boats/*'
+      - fish -c 'fisher plugins/*'
 
   uninstall-all-plugins:
     cmds:
