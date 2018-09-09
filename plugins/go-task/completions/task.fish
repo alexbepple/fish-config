@@ -3,9 +3,11 @@ test -z $task_names; and set task_names ''
 complete -c task -a $task_names
 complete -c task --no-files
 
-complete -c task -s d -l dir      -d 'sets directory of execution'
+complete -c task -s d -l dir      -d 'sets directory of execution' \
+    --require-parameter
 complete -c task      -l dry      -d 'compiles and prints tasks in the order that they would be run, without executing them'
 complete -c task -s f -l force    -d 'forces execution even when the task is up-to-date'
+complete -c task -s h -l help
 complete -c task -s i -l init     -d 'creates a new Taskfile.yml in the current folder'
 complete -c task -s l -l list     -d 'lists tasks with description of current Taskfile'
 complete -c task -s s -l silent   -d 'disables echoing'
