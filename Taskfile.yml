@@ -1,19 +1,14 @@
 tasks:
 
+  rebuild:
+    cmds:
+      - task: uninstall-all-plugins
+      - task: clean
+      - task: build
+
   build:
     cmds:
       - fish -c 'fisher boats/*'
-      - fish -c 'fisher up'
-
-  rebuild:
-    cmds:
-      - task: clean
-      - task: build
-  
-  rebuild-from-scratch:
-    cmds:
-      - task: uninstall-all-plugins
-      - task: rebuild
 
   uninstall-all-plugins:
     cmds:
