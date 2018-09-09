@@ -10,6 +10,15 @@ tasks:
       - task: clean
       - task: build
   
+  rebuild-from-scratch:
+    cmds:
+      - task: uninstall-all-plugins
+      - task: rebuild
+
+  uninstall-all-plugins:
+    cmds:
+      - fish -c 'fisher ls | fisher rm'
+
   clean:
     cmds:
       - git clean -xd -f
