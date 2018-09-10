@@ -6,8 +6,10 @@ function __set_commandline
     end
 end
 
+function __nauniq; awk '!a[$0]++'; end
+
 function __cle_search_history
-    history | string trim | awk '!a[$0]++' | fzf | read -l value
+    history | string trim | __nauniq | fzf | read -l value
     __set_commandline $value
 end
 
