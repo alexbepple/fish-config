@@ -1,12 +1,10 @@
-function __set_commandline
+function __cd
     if test (count $argv) -gt 0
-        commandline $argv
-    else
-        commandline ''
+        cd $argv
     end
 end
 
 function cdf
     fd . -t d | fzf | read -l value
-    cd $value
+    __cd $value
 end
