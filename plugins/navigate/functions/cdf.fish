@@ -7,6 +7,6 @@ function __set_commandline
 end
 
 function cdf
-    fd . -t d | fzf --height 40% --border --reverse --no-sort | read -l value
+    fd . -t d | fzf | read -l value
     cd $value
 end

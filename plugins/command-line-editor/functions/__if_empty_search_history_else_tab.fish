@@ -7,7 +7,7 @@ function __set_commandline
 end
 
 function __cle_search_history
-    history | string trim | awk '!a[$0]++' | fzf --height 40% --border --reverse --no-sort | read -l value
+    history | string trim | awk '!a[$0]++' | fzf | read -l value
     __set_commandline $value
 end
 
