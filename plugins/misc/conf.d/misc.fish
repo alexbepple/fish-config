@@ -1,5 +1,8 @@
 set --prepend PATH $HOME/.cargo/bin
 
+set -x GOPATH $HOME/.go
+set --prepend PATH $GOPATH/bin
+
 abbr --add c code
 abbr L less
 
