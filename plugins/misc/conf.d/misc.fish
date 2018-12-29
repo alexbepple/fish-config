@@ -1,4 +1,4 @@
-set PATH $HOME/.cargo/bin $PATH
+set --prepend PATH $HOME/.cargo/bin
 
 abbr --add c code
 abbr L less
