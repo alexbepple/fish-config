@@ -4,20 +4,13 @@ tasks:
 
   rebuild:
     cmds:
-      # uninstall and clean should not run in parallel
-      # b/c uninstall dramatically reduces the need for cleaning
-      - task: uninstall-all-plugins
       - task: clean
       - task: build
       - task: test
 
   build:
     cmds:
-      - fish -c 'fisher plugins/*'
-
-  uninstall-all-plugins:
-    cmds:
-      - fish -c 'fisher ls | fisher rm'
+      - fish -c 'fisher add ./plugins/*'
 
   clean:
     cmds:
