@@ -8,11 +8,12 @@ Run `task` to build and rebuild config.
 [go-task/task](https://github.com/go-task/task)
 
 
-### Fisherman
+## Fisher
 
-Why use [Fisherman](https://fisherman.github.io/) for assembling fish config?
+Why use [Fisher](https://github.com/jorgebucaran/fisher) for assembling fish config?
 
+* makes it simple to modularize config
 * handles transitive dependencies
-* provides mechanism for merging, e.g. `fish_user_key_bindings`.
 
-However, `fisher_dependency_count` is pain.
+Fisher is installed permanently instead of bootstrapping
+in order to allow for offline rebuilding.

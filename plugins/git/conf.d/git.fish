@@ -1,4 +1,4 @@
-abbr --add g git
+abbr g git
 
 abbr ga git add
 abbr gc git commit --verbose
@@ -14,4 +14,4 @@ abbr gco git checkout
 abbr gp git push
 abbr gpr git pull --rebase
 
-abbr --add st open -a sourcetree .
+abbr st open -a sourcetree .

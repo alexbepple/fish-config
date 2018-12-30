@@ -1,3 +1,5 @@
+set -x LC_ALL en_US
+
 set --prepend PATH $HOME/.cargo/bin
 
 set -x GOPATH $HOME/.go
