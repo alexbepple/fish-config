@@ -7,7 +7,7 @@ end
 function __generate_prefix_paths
     set -l path_components $argv
     for i in (seq (count $path_components))
-        echo (string join '/' $path_components[0..$i])
+        echo (string join '/' $path_components[1..$i])
     end
 end
 
