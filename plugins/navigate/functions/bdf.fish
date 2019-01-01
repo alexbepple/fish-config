@@ -7,6 +7,5 @@ end
 
 function bdf
     set -l cwd_components (pwd | string split '/')
-    __generate_prefix_paths $cwd_components | grep / | grep -v (pwd) | fzf | read -l choice
-    _cd_if_given $choice
+    __generate_prefix_paths $cwd_components | grep / | grep -v (pwd) | fzf | _cd_if_given
 end

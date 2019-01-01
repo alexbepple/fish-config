@@ -1,4 +1,3 @@
 function cdf
-    fd . -t d | fzf | read -l value
-    _cd_if_given $value
+    fd . -t d | fzf | _cd_if_given
 end

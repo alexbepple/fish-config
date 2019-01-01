@@ -1,5 +1,10 @@
 function _cd_if_given
-    if test (count $argv) -gt 0
-        cd $argv
+    set -l destination $argv
+    if test (count $destination) -eq 0
+        read destination
+    end
+
+    if test (count $destination) -gt 0
+        cd $destination
     end
 end
