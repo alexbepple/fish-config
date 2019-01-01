@@ -29,12 +29,15 @@ function _get_previously_visited
     z -l ^/dev/null | __extract_paths
 end
 
-function j
-    function echo_all; for arg in $argv; echo $arg; end; end
+function _j_list_candidates
+    _get_ancestors
+    _get_descendants
+    _get_previously_visited
+end
 
+function j
     set -l fzf_command fzf -1 
     if test (count $argv) -gt 0; set --append fzf_command -q $argv; end
     
-    set -l paths (_get_ancestors) (_get_descendants) (_get_previously_visited)
-    echo_all $paths | $fzf_command | _cd_if_given
+    _j_list_candidates | $fzf_command | _cd_if_given
 end
