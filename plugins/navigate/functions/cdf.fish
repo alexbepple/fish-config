@@ -1,4 +1,4 @@
-function _get_descendants; fd . -t d; end
+function _get_descendants; fd . --type d --max-depth 3; end
 
 function _get_ancestors
     function generate_prefixes
