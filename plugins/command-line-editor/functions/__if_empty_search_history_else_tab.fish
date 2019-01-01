@@ -9,7 +9,7 @@ end
 function __nauniq; awk '!a[$0]++'; end
 
 function __cle_search_history
-    history | string trim | __nauniq | fzf | read -l value
+    set -l value (history | string trim | __nauniq | fzf)
     __set_commandline $value
 end
 
