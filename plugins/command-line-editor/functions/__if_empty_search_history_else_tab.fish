@@ -13,10 +13,22 @@ function __cle_search_history
     __set_commandline $value
 end
 
+function __emulate_default_tab_behavior
+    # I do not understand why I have to do this.
+    # In my opinion, `commandline -f complete` should suffice.
+    # It is the default binding, after all:
+    #   bind --preset \t complete
+    if commandline --paging-mode
+        down-or-search
+    else
+        commandline -f complete
+    end
+end
+
 function __if_empty_search_history_else_tab
     if test -z (commandline)
         __cle_search_history
     else
-        eval $__cle_tab_command
+        __emulate_default_tab_behavior
     end
 end
