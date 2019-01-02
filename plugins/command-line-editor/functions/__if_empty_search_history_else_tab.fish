@@ -18,6 +18,8 @@ function __emulate_default_tab_behavior
     # In my opinion, `commandline -f complete` should suffice.
     # It is the default binding, after all:
     #   bind --preset \t complete
+    # cp. https://github.com/laughedelic/pisces/blob/master/functions/_pisces_complete.fish
+    
     if commandline --paging-mode
         down-or-search
     else
