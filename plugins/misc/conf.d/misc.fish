@@ -12,6 +12,8 @@ abbr l $exa
 abbr ll $exa -l
 
 abbr c code
+
+set -x LESS -i
 abbr L less
 
 set -x FZF_DEFAULT_OPTS '--height 40% --border --reverse --no-sort'
