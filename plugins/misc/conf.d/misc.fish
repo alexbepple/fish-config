@@ -23,3 +23,5 @@ set -x FZF_DEFAULT_OPTS '--height 40% --border --reverse --no-sort'
 bass source $HOME/.nix-profile/etc/profile.d/nix.sh
 abbr ne nix-env
 abbr ns nix-shell
+
+eval (direnv hook fish)
