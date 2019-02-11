@@ -1,11 +1,11 @@
 ## Usage
 
-Run `task` to build and rebuild config.
+Run `just` to build and rebuild config.
 
 
-## Dependencies
+## Build dependencies
 
-[go-task/task](https://github.com/go-task/task)
+[just](https://github.com/casey/just)
 
 
 ## Fisher
