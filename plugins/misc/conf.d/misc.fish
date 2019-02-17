@@ -1,3 +1,4 @@
+set -x LANG en_US.utf8
 set -x LC_ALL en_US
 
 set --prepend PATH $HOME/.cargo/bin
