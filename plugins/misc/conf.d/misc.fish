@@ -26,5 +26,3 @@ abbr ne nix-env
 abbr ns nix-shell
 
 eval (direnv hook fish)
-
-abbr just 'just -v --highlight'
