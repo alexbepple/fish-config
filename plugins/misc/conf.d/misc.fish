@@ -26,3 +26,5 @@ abbr ne nix-env
 abbr ns nix-shell
 
 eval (direnv hook fish)
+
+abbr v vagrant
