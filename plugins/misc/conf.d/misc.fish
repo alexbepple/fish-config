@@ -13,6 +13,7 @@ abbr l $exa
 abbr ll $exa -l
 
 abbr c code
+abbr c. 'code .'
 abbr o open
 
 set -x LESS -i
