@@ -1,6 +1,9 @@
 set -x LANG en_US.utf8
 set -x LC_ALL en_US
 
+set HOMEBREW_BIN /usr/local/bin
+contains $HOMEBREW_BIN $PATH; or set --prepend PATH $HOMEBREW_BIN
+
 set --prepend PATH $HOME/.cargo/bin
 
 set --prepend PATH $HOME/computing/dotfiles.et.al/npm/bin
