@@ -25,7 +25,16 @@ complete -c bat -a '(__fish_complete_path)'
 
 set -x FZF_DEFAULT_OPTS '--height 40% --border --reverse --no-sort'
 
-status --is-interactive; and bass source $HOME/.nix-profile/etc/profile.d/nix.sh
+if status --is-interactive
+    set NIX_LINK $HOME/.nix-profile
+    set NIX_USER_PROFILE_DIR /nix/var/nix/profiles/per-user/$USER
+    set --export NIX_PATH $HOME/.nix-defexpr/channels
+    set --export NIX_PROFILES "/nix/var/nix/profiles/default $HOME/.nix-profile"
+    set --export NIX_SSL_CERT_FILE "$NIX_LINK/etc/ssl/certs/ca-bundle.crt"
+    set --export --append MANPATH "$NIX_LINK/share/man"
+    set --prepend PATH "$NIX_LINK/bin"
+end
+
 abbr ne nix-env
 abbr ns nix-shell
 
