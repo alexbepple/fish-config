@@ -4,6 +4,8 @@ set -x LC_ALL en_US
 set --prepend PATH /usr/local/bin
 set --prepend PATH /usr/local/sbin
 
+set --prepend PATH /usr/local/texlive/bin
+
 set --prepend PATH $HOME/.cargo/bin
 
 set --prepend PATH $HOME/computing/dotfiles.et.al/npm/bin
