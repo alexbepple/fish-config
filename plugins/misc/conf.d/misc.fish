@@ -13,6 +13,8 @@ set --prepend PATH $HOME/computing/dotfiles.et.al/npm/bin
 set -x GOPATH $HOME/.go
 set --prepend PATH $GOPATH/bin
 
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 set exa exa -F
 abbr l $exa
 abbr ll $exa -l
