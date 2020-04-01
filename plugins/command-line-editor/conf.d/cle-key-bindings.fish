@@ -2,13 +2,13 @@ function __cle_set_convenience_bindings
     set bind bind -M $argv[1]
 
     # accept suggestions more easily, as Control-F is hard to reach
-    $bind ƒ forward-char
+    $bind \ef forward-char
 
-    $bind ª backward-word # alt-h
-    $bind @ forward-word # alt-l
+    $bind \eh backward-word
+    $bind \el forward-word
 
-    $bind ∆ up-or-search # alt-k
-    $bind º down-or-search # alt-j
+    $bind \ek up-or-search
+    $bind \ej down-or-search
 
     $bind \t __if_empty_search_history_else_tab
 end
