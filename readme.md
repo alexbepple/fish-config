@@ -17,3 +17,8 @@ Why use [Fisher](https://github.com/jorgebucaran/fisher) for assembling fish con
 
 Fisher is installed permanently instead of bootstrapping
 in order to allow for offline rebuilding.
+
+
+## Key bindings
+
+Some custom bindings are Esc-based. Thus the terminal must send them appropriately. E.g. iTerm2 default is that left Option key acts "normal". One needs to change it to "Esc+".
