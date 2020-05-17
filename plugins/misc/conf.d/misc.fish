@@ -1,5 +1,5 @@
-set -x LANG en_US.utf8
-set -x LC_ALL C
+# set -x LANG en_US.utf8
+set -x LC_ALL en_US
 
 set --prepend PATH /usr/local/bin
 set --prepend PATH /usr/local/sbin
