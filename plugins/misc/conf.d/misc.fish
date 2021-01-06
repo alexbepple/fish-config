@@ -29,6 +29,10 @@ complete -c bat -a '(__fish_complete_path)'
 
 set -x FZF_DEFAULT_OPTS '--height 40% --border --reverse --no-sort'
 
+set -l SPACK_HOME $HOME/code/+experiments/spack
+set --prepend PATH $SPACK_HOME/bin
+abbr sse "source $SPACK_HOME/share/spack/setup-env.fish"
+
 if status --is-interactive
     set NIX_LINK $HOME/.nix-profile
     set NIX_USER_PROFILE_DIR /nix/var/nix/profiles/per-user/$USER
