@@ -26,7 +26,7 @@ end
 function _get_previously_visited
     function __extract_paths; awk '{ $1 = ""; print $0 }' | string trim; end
 
-    z -l ^/dev/null | __extract_paths
+    z -l | __extract_paths
 end
 
 function _j_list_candidates
