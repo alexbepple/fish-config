@@ -1,6 +1,7 @@
 abbr g git
 
 abbr ga git add
+abbr ga. 'git add .'
 abbr gc git commit --verbose
 abbr gac 'git add -A :/; and git commit --verbose'
 
