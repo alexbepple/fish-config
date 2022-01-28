@@ -29,6 +29,8 @@ complete -c bat -a '(__fish_complete_path)'
 
 set -x FZF_DEFAULT_OPTS '--height 40% --border --reverse --no-sort'
 
+abbr js just
+
 set -l SPACK_HOME $HOME/code/+experiments/spack
 set --prepend PATH $SPACK_HOME/bin
 abbr sse "source $SPACK_HOME/share/spack/setup-env.fish"
