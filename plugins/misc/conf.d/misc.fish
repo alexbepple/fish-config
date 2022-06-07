@@ -21,6 +21,8 @@ abbr ll $exa -l
 
 abbr c code
 abbr c. 'code .'
+abbr ij 'open -na "IntelliJ IDEA.app"'
+abbr ij. 'open -na "IntelliJ IDEA.app" --args (pwd)'
 abbr o open
 
 set -x LESS -i
